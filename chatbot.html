@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <!-- Google Material Symbol -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+  <button id="chatbot-toggler">
+    <span class="material-symbols-outlined"> chat </span>
+    
+    <span class="material-symbols-rounded">close</span>
+    </button>
+
+  <div class="chatbot-popup">
+                
+          <!-- Chatbot Header -->
+  
+    <div class="chatbot-header">
+        <div class="chatbot-info">
+          <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#5f6368"><path d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm200-80q25 0 42.5-17.5T420-500q0-25-17.5-42.5T360-560q-25 0-42.5 17.5T300-500q0 25 17.5 42.5T360-440Zm240 0q25 0 42.5-17.5T660-500q0-25-17.5-42.5T600-560q-25 0-42.5 17.5T540-500q0 25 17.5 42.5T600-440ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"/></svg>
+         <h2 class="logo-text">Chatbot</h2>
+         </div>
+        <button id="close-chatbot" class="material-symbols-rounded">
+          keyboard_arrow_down
+          </button>
+  </div>
+  
+                   <!-- Chatbot Main -->
+  
+<div class="chatbot-main">
+ 
+  <div class="message bot-message">
+      <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#5f6368"><path d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm200-80q25 0 42.5-17.5T420-500q0-25-17.5-42.5T360-560q-25 0-42.5 17.5T300-500q0 25 17.5 42.5T360-440Zm240 0q25 0 42.5-17.5T660-500q0-25-17.5-42.5T600-560q-25 0-42.5 17.5T540-500q0 25 17.5 42.5T600-440ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"/></svg>
+
+      <div class="message-text">
+        Hey there <br>
+          how can i help you today?
+       </div>
+      </div>
+
+      <!-- <div class="message user-message">
+        <div class="message-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+        
+      </div> -->
+      
+     <!-- <div class="message bot-message thinking">
+        <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#5f6368"><path d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm200-80q25 0 42.5-17.5T420-500q0-25-17.5-42.5T360-560q-25 0-42.5 17.5T300-500q0 25 17.5 42.5T360-440Zm240 0q25 0 42.5-17.5T660-500q0-25-17.5-42.5T600-560q-25 0-42.5 17.5T540-500q0 25 17.5 42.5T600-440ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"/></svg>
+        <div class="message-text">
+
+          <div class="thinking-indicator">
+          
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div> -->
+      </div>
+
+
+
+
+
+    <!-- Chatbot Message Footer -->
+  
+  <div class="chatbot-footer">
+     <form action="#" class="chatbot-form">
+       <textarea placeholder="Message..." class="message-input" required ></textarea>
+  
+       <div class="chatbot-controls">
+         <button id="emoji-picker" type="button"  class="material-symbols-outlined">
+           sentiment_satisfied
+           </button>
+           <div class="file-upload-wrapper">
+            <input type="file" class="file" id="file-input" hidden>
+           <img src="#" >
+            <button  type="button" id="file-upload" class="material-symbols-rounded">
+              attach_file  </button>
+              <button  type="button" id="file-cancel" class="material-symbols-rounded">
+                close</button>
+           </div>
+
+           <button type="submit" class="material-symbols-rounded" id="send-message">
+             arrow_upward
+            </button>
+         </div>
+     </form>
+  </div>
+  
+  </div> 
+  </div>
+          
+      
+
+                <!-- LINK EMOJI MART FOR EMOJI PICKER -->
+  <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+</script>
+<!-- LINK CUSTOM SCRIPT -->
+  <script src="java/chatBot.js"></script>
+</body>
+</html>
