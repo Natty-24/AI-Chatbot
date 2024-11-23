@@ -330,7 +330,7 @@ body.show-emoji-picker em-emoji-picker{
 
 /* RESPONSIVE MEDIA QUERY FOR MOBLIE SCREENS */
 
-@media screen and (min-width: 520px) and (max-width:570px){
+@media screen and (max-width:520px){
        #chatbot-toggler {
         right: 20px;
         bottom: 20px;
